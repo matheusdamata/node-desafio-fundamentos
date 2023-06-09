@@ -5,12 +5,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node --watch src/server.js"
+    "dev": "node --watch src/server.js",
+    "dev:stream-server": "node --watch streams/stream-http-server.js",
+    "dev:stream-upload": "node --watch streams/upload-to-http-stream.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@rocketseat/eslint-config": "^1.2.0"
+  },
+  "dependencies": {
+    "csv-generate": "^4.2.6",
+    "csv-parse": "^5.4.0"
   }
 }

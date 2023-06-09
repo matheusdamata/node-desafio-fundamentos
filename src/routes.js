@@ -13,7 +13,7 @@ export const routes = [
 
       console.log(search)
 
-      const taks = database.select(
+      const tasks = database.select(
         'tasks',
         search
           ? {
@@ -23,7 +23,7 @@ export const routes = [
           : null,
       )
 
-      return res.end(JSON.stringify(taks))
+      return res.end(JSON.stringify(tasks))
     },
   },
   {
